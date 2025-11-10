@@ -1,0 +1,67 @@
+import React from "react";
+
+const Valsad = () => {
+  return (
+    <div className="font-sans m-0 p-0">
+      {/* Background Image Section */}
+      <div
+        className="w-full h-[80vh] bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('/images/villas/valsad_bunglow/Picture2.jpeg')",
+        }}
+      ></div>
+
+      {/* Content Section */}
+      <div className="flex flex-col px-6 md:px-12 py-12 max-w-[1200px] mx-auto bg-white shadow-lg rounded-xl mt-[-50px] relative z-10">
+        {/* Image + Content Row */}
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Left Image */}
+          <div className="flex-1 min-w-[300px]">
+            <img
+              src="/images/villas/valsad_bunglow/Picture1.jpeg"
+              alt="Ashar Titan Interior"
+              className="w-full h-[600px] object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+
+          {/* Right Content */}
+          <div className="flex-1 flex flex-col justify-start min-w-[300px]">
+            {/* Description Headers */}
+            <div className="flex flex-col items-center mb-6">
+              <p className="border-b-2 border-black pb-1 text-[20px] font-semibold">
+                Valsad Bunglow
+              </p>
+              
+            </div>
+
+            {/* Paragraph */}
+            <p className="flex justify-center">
+              <ul className="text-[20px] leading-[3] text-gray-800 list-disc list-inside text-left">
+              <li>Location: Valsad, Gujarat</li>
+              <li>Area: 25,000 Lac Sq.Ft.</li>
+              <li>Stage: Concept</li>
+              <li>Client: N/A</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        {/* Video */}
+          <div className="col-span-1 sm:col-span-2 lg:col-span-3">
+            <video
+              controls
+              className="w-full h-[500px] object-cover rounded-lg shadow-md"
+            >
+              <source
+                src="\images\villas\valsad_bunglow\video.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      </div>
+    </div>
+  );
+};
+
+export default Valsad;
